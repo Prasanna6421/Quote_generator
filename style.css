@@ -1,0 +1,114 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+    body {
+      min-height: 100vh;
+      background: hsl(218, 23%, 16%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      background: hsl(217, 19%, 24%);
+      max-width: 540px;
+      width: 100%;
+      padding: 40px 30px 80px;
+      border-radius: 15px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .dice-btn {
+      position: absolute;
+      left: 50%;
+      bottom: -30px;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: none;
+      background: hsl(150, 100%, 66%);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: box-shadow 0.3s ease, transform 0.2s ease;
+      font-size: 24px;
+      color: #fff;
+    }
+    .dice-btn:hover {
+      box-shadow: 0 0 30px hsl(150, 100%, 66%);
+    }
+    .quote-no {
+      letter-spacing: 2px;
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: hsl(150, 100%, 66%);
+    }
+    .quote-text {
+      color: hsl(193, 38%, 86%);
+      font-size: 22px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      transition: opacity 0.4s ease;
+       text-justify: inter-word;
+    }
+    .quote-author{
+        text-align: right;
+        font-size:16x;
+        color: hsl(193, 38%, 86%);
+        font-style: italic;
+        margin-top: 30px;
+    }
+    .divider{
+        width: 100%;
+    }
+
+ @media (min-width: 481px) and (max-width: 767px) {
+  .card {
+    padding: 35px 25px 75px;
+  }
+  .quote-text {
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .quote-author {
+    font-size: 15px;
+    margin-bottom:20px;
+
+  }
+}
+
+
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .card {
+    max-width: 640px;
+  }
+
+  .quote-text {
+    font-size: 23px;
+  }
+  .quote-author{
+     margin-bottom:20px;
+
+  }
+}
+
+@media (min-width: 1280px) {
+  .card {
+    max-width:700px;
+  }
+
+  .quote-text {
+    font-size: 24px;
+  }
+
+}
+
